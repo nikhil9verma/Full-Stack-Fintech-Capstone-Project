@@ -84,7 +84,7 @@ export default function CreditAssessment() {
             <div className="col-span-2">
               <label className="label-text">CIBIL Score — {form.cibil_score}</label>
               <input type="range" min={300} max={900} value={form.cibil_score}
-                onChange={e => set('cibil_score', +e.target.value)} className="w-full mt-1"/>
+                onChange={e => set('cibil_score', +e.target.value)} className="w-full mt-1 accent-[#06b6d4]"/>
               <div className="flex justify-between text-[10px] text-gray-600 mt-1"><span>300</span><span>900</span></div>
             </div>
             {[

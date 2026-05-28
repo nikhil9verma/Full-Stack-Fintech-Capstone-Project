@@ -70,7 +70,7 @@ export default function ChurnPrediction() {
             <div className="col-span-2">
               <label className="label-text">Credit Score — {form.credit_score}</label>
               <input type="range" min={300} max={900} value={form.credit_score}
-                onChange={e => set('credit_score', +e.target.value)} className="w-full mt-1"/>
+                onChange={e => set('credit_score', +e.target.value)} className="w-full mt-1 accent-[#06b6d4]"/>
             </div>
             {[
               ['Age', 'age', 18, 95], ['Tenure (years)', 'tenure', 0, 15],
@@ -79,7 +79,7 @@ export default function ChurnPrediction() {
               <div key={key}>
                 <label className="label-text">{lbl} — {form[key]}</label>
                 <input type="range" min={min} max={max} value={form[key]}
-                  onChange={e => set(key, +e.target.value)} className="w-full mt-1"/>
+                  onChange={e => set(key, +e.target.value)} className="w-full mt-1 accent-[#06b6d4]"/>
               </div>
             ))}
             <div>
